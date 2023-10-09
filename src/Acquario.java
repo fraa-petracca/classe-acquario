@@ -21,12 +21,22 @@ public class Acquario {
         return this.capienza;
     }
 
-    public String addPesce(Pesce nuovoPesce){
+    public void addPesce(Pesce nuovoPesce){
+        int v = 0;
+        while(v < this.pesci.length && this.pesci[v] != null){
 
+        }
     }
 
     public String deletePesce(int scelta){
-
+        String s;
+        if(this.pesci[scelta] != null){
+            this.pesci[scelta] = null;
+            s = "Pesce cancellato";
+        } else {
+            s = "Pesce non cancellato";
+        }
+        return s;
     }
 
     public String cercaPesce(String specie){
